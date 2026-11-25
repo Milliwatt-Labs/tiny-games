@@ -1,0 +1,1918 @@
+{
+ "what": "Exact outcome probabilities of the game-play arms (humanity/humanity.py) by recursion over the game tree.",
+ "summary": {
+  "arms": 46,
+  "B_arms": 35,
+  "B_max_abs_z_wins": 2.016542368529997,
+  "B_chi2_wins": 29.768067645115053,
+  "B_chi2_dof": 35,
+  "B_within_2sd": 34,
+  "A_exact": true,
+  "max_abs_ideal_minus_implemented": 4.1392111960192324e-10,
+  "zero_probability_losses": true
+ },
+ "arms": [
+  {
+   "name": "A-perfect-finisher-x",
+   "group": "A",
+   "net": "finisher",
+   "side": "X",
+   "opponent": "perfect",
+   "p": 0.0,
+   "open_k": 0,
+   "games": 260000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    },
+    "draws": {
+     "p_ideal": 1.0,
+     "p_implemented": 1.0,
+     "p_ideal_exact": "1",
+     "gpu": 260000000000,
+     "expected": 260000000000.0,
+     "z": null,
+     "exact_match": true
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "A-perfect-finisher-o",
+   "group": "A",
+   "net": "finisher",
+   "side": "O",
+   "opponent": "perfect",
+   "p": 0.0,
+   "open_k": 0,
+   "games": 260000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    },
+    "draws": {
+     "p_ideal": 1.0,
+     "p_implemented": 1.0,
+     "p_ideal_exact": "1",
+     "gpu": 260000000000,
+     "expected": 260000000000.0,
+     "z": null,
+     "exact_match": true
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "A-perfect-satxo-x",
+   "group": "A",
+   "net": "satxo",
+   "side": "X",
+   "opponent": "perfect",
+   "p": 0.0,
+   "open_k": 0,
+   "games": 260000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    },
+    "draws": {
+     "p_ideal": 1.0,
+     "p_implemented": 1.0,
+     "p_ideal_exact": "1",
+     "gpu": 260000000000,
+     "expected": 260000000000.0,
+     "z": null,
+     "exact_match": true
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "A-perfect-satxo-o",
+   "group": "A",
+   "net": "satxo",
+   "side": "O",
+   "opponent": "perfect",
+   "p": 0.0,
+   "open_k": 0,
+   "games": 260000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    },
+    "draws": {
+     "p_ideal": 1.0,
+     "p_implemented": 1.0,
+     "p_ideal_exact": "1",
+     "gpu": 260000000000,
+     "expected": 260000000000.0,
+     "z": null,
+     "exact_match": true
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "B-random-finisher-x",
+   "group": "B",
+   "net": "finisher",
+   "side": "X",
+   "opponent": "random",
+   "p": 0.0,
+   "open_k": 0,
+   "games": 36000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.9895833333333334,
+     "p_implemented": 0.9895833333321207,
+     "p_ideal_exact": "95/96",
+     "gpu": 35625008803,
+     "expected": 35624999999.956345,
+     "z": 0.4569735206310893,
+     "exact_match": false
+    },
+    "draws": {
+     "p_ideal": 0.010416666666666666,
+     "p_implemented": 0.010416666667879326,
+     "p_ideal_exact": "1/96",
+     "gpu": 374991197,
+     "expected": 375000000.04365575,
+     "z": -0.4569735206496541,
+     "exact_match": false
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "B-kid50-finisher-x",
+   "group": "B",
+   "net": "finisher",
+   "side": "X",
+   "opponent": "kid",
+   "p": 0.5,
+   "open_k": 0,
+   "games": 36000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.86328125,
+     "p_implemented": 0.8632812499977263,
+     "p_ideal_exact": "221/256",
+     "gpu": 31078062966,
+     "expected": 31078124999.918144,
+     "z": -0.951673044863608,
+     "exact_match": false
+    },
+    "draws": {
+     "p_ideal": 0.13671875,
+     "p_implemented": 0.13671875000227374,
+     "p_ideal_exact": "35/256",
+     "gpu": 4921937034,
+     "expected": 4921875000.081855,
+     "z": 0.9516730448782386,
+     "exact_match": false
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "B-kid90-finisher-x",
+   "group": "B",
+   "net": "finisher",
+   "side": "X",
+   "opponent": "kid",
+   "p": 0.9,
+   "open_k": 0,
+   "games": 36000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.5972395833333334,
+     "p_implemented": 0.5972395834167364,
+     "p_ideal_exact": "11467/19200",
+     "gpu": 21500606082,
+     "expected": 21500625003.00251,
+     "z": -0.2033270737113285,
+     "exact_match": false
+    },
+    "draws": {
+     "p_ideal": 0.4027604166666667,
+     "p_implemented": 0.40276041658326356,
+     "p_ideal_exact": "7733/19200",
+     "gpu": 14499393918,
+     "expected": 14499374996.997488,
+     "z": 0.20332707373182504,
+     "exact_match": false
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "B-mix25-finisher-x",
+   "group": "B",
+   "net": "finisher",
+   "side": "X",
+   "opponent": "mix",
+   "p": 0.25,
+   "open_k": 0,
+   "games": 36000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.9359130859375,
+     "p_implemented": 0.9359130859350131,
+     "p_ideal_exact": "7667/8192",
+     "gpu": 33692926911,
+     "expected": 33692871093.660473,
+     "z": 1.201200328732302,
+     "exact_match": false
+    },
+    "draws": {
+     "p_ideal": 0.0640869140625,
+     "p_implemented": 0.0640869140649869,
+     "p_ideal_exact": "525/8192",
+     "gpu": 2307073089,
+     "expected": 2307128906.3395286,
+     "z": -1.201200328763087,
+     "exact_match": false
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "B-mix50-finisher-x",
+   "group": "B",
+   "net": "finisher",
+   "side": "X",
+   "opponent": "mix",
+   "p": 0.5,
+   "open_k": 0,
+   "games": 36000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.794921875,
+     "p_implemented": 0.7949218749965894,
+     "p_ideal_exact": "407/512",
+     "gpu": 28617204931,
+     "expected": 28617187499.877216,
+     "z": 0.22753709992453425,
+     "exact_match": false
+    },
+    "draws": {
+     "p_ideal": 0.205078125,
+     "p_implemented": 0.2050781250034106,
+     "p_ideal_exact": "105/512",
+     "gpu": 7382795069,
+     "expected": 7382812500.122782,
+     "z": -0.22753709989963666,
+     "exact_match": false
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "B-mix75-finisher-x",
+   "group": "B",
+   "net": "finisher",
+   "side": "X",
+   "opponent": "mix",
+   "p": 0.75,
+   "open_k": 0,
+   "games": 36000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.5075276692708334,
+     "p_implemented": 0.5075276692678159,
+     "p_ideal_exact": "12473/24576",
+     "gpu": 18271004783,
+     "expected": 18270996093.641373,
+     "z": 0.09160426447493299,
+     "exact_match": false
+    },
+    "draws": {
+     "p_ideal": 0.4924723307291667,
+     "p_implemented": 0.4924723307321841,
+     "p_ideal_exact": "12103/24576",
+     "gpu": 17728995217,
+     "expected": 17729003906.358627,
+     "z": -0.09160426447493299,
+     "exact_match": false
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "B-mix90-finisher-x",
+   "group": "B",
+   "net": "finisher",
+   "side": "X",
+   "opponent": "mix",
+   "p": 0.9,
+   "open_k": 0,
+   "games": 36000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.23475520833333333,
+     "p_implemented": 0.2347552085293092,
+     "p_ideal_exact": "45073/192000",
+     "gpu": 8451143357,
+     "expected": 8451187507.055131,
+     "z": -0.5489998051369209,
+     "exact_match": false
+    },
+    "draws": {
+     "p_ideal": 0.7652447916666667,
+     "p_implemented": 0.7652447914706908,
+     "p_ideal_exact": "146927/192000",
+     "gpu": 27548856643,
+     "expected": 27548812492.94487,
+     "z": 0.5489998051250621,
+     "exact_match": false
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "B-random-finisher-o",
+   "group": "B",
+   "net": "finisher",
+   "side": "O",
+   "opponent": "random",
+   "p": 0.0,
+   "open_k": 0,
+   "games": 36000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.9164021164021164,
+     "p_implemented": 0.9164021163949714,
+     "p_ideal_exact": "866/945",
+     "gpu": 32990444783,
+     "expected": 32990476190.218967,
+     "z": -0.598050074528857,
+     "exact_match": false
+    },
+    "draws": {
+     "p_ideal": 0.0835978835978836,
+     "p_implemented": 0.08359788360502866,
+     "p_ideal_exact": "79/945",
+     "gpu": 3009555217,
+     "expected": 3009523809.781032,
+     "z": 0.5980500745379368,
+     "exact_match": false
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "B-kid50-finisher-o",
+   "group": "B",
+   "net": "finisher",
+   "side": "O",
+   "opponent": "kid",
+   "p": 0.5,
+   "open_k": 0,
+   "games": 36000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.6074074074074074,
+     "p_implemented": 0.6074074073895447,
+     "p_ideal_exact": "82/135",
+     "gpu": 21866572812,
+     "expected": 21866666666.02361,
+     "z": -1.0129559343611805,
+     "exact_match": false
+    },
+    "draws": {
+     "p_ideal": 0.3925925925925926,
+     "p_implemented": 0.39259259261045526,
+     "p_ideal_exact": "53/135",
+     "gpu": 14133427188,
+     "expected": 14133333333.976389,
+     "z": 1.0129559343817662,
+     "exact_match": false
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "B-kid90-finisher-o",
+   "group": "B",
+   "net": "finisher",
+   "side": "O",
+   "opponent": "kid",
+   "p": 0.9,
+   "open_k": 0,
+   "games": 36000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.19564021164021164,
+     "p_implemented": 0.19564021173661092,
+     "p_ideal_exact": "4622/23625",
+     "gpu": 7043097144,
+     "expected": 7043047622.517993,
+     "z": 0.6579428096899819,
+     "exact_match": false
+    },
+    "draws": {
+     "p_ideal": 0.8043597883597884,
+     "p_implemented": 0.804359788263389,
+     "p_ideal_exact": "19003/23625",
+     "gpu": 28956902856,
+     "expected": 28956952377.482006,
+     "z": -0.6579428096773113,
+     "exact_match": false
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "B-mix25-finisher-o",
+   "group": "B",
+   "net": "finisher",
+   "side": "O",
+   "opponent": "mix",
+   "p": 0.25,
+   "open_k": 0,
+   "games": 36000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.7861111111111111,
+     "p_implemented": 0.7861111110971251,
+     "p_ideal_exact": "283/360",
+     "gpu": 28299952201,
+     "expected": 28299999999.496502,
+     "z": -0.6143656223176339,
+     "exact_match": false
+    },
+    "draws": {
+     "p_ideal": 0.21388888888888888,
+     "p_implemented": 0.21388888890287489,
+     "p_ideal_exact": "77/360",
+     "gpu": 7700047799,
+     "expected": 7700000000.503496,
+     "z": 0.6143656223421495,
+     "exact_match": false
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "B-mix50-finisher-o",
+   "group": "B",
+   "net": "finisher",
+   "side": "O",
+   "opponent": "mix",
+   "p": 0.5,
+   "open_k": 0,
+   "games": 36000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.5920634920634921,
+     "p_implemented": 0.5920634920478982,
+     "p_ideal_exact": "373/630",
+     "gpu": 21314293114,
+     "expected": 21314285713.724335,
+     "z": 0.07936266066622198,
+     "exact_match": false
+    },
+    "draws": {
+     "p_ideal": 0.40793650793650793,
+     "p_implemented": 0.40793650795210185,
+     "p_ideal_exact": "257/630",
+     "gpu": 14685706886,
+     "expected": 14685714286.275667,
+     "z": -0.07936266068667693,
+     "exact_match": false
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "B-mix75-finisher-o",
+   "group": "B",
+   "net": "finisher",
+   "side": "O",
+   "opponent": "mix",
+   "p": 0.75,
+   "open_k": 0,
+   "games": 36000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.3310846560846561,
+     "p_implemented": 0.331084656073465,
+     "p_ideal_exact": "2503/7560",
+     "gpu": 11918876016,
+     "expected": 11919047618.64474,
+     "z": -1.9218417352497583,
+     "exact_match": false
+    },
+    "draws": {
+     "p_ideal": 0.6689153439153439,
+     "p_implemented": 0.6689153439265351,
+     "p_ideal_exact": "5057/7560",
+     "gpu": 24081123984,
+     "expected": 24080952381.355263,
+     "z": 1.9218417352283972,
+     "exact_match": false
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "B-mix90-finisher-o",
+   "group": "B",
+   "net": "finisher",
+   "side": "O",
+   "opponent": "mix",
+   "p": 0.9,
+   "open_k": 0,
+   "games": 36000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.14104973544973545,
+     "p_implemented": 0.14104973557036068,
+     "p_ideal_exact": "33323/236250",
+     "gpu": 5077743076,
+     "expected": 5077790480.532985,
+     "z": -0.7177917707755401,
+     "exact_match": false
+    },
+    "draws": {
+     "p_ideal": 0.8589502645502646,
+     "p_implemented": 0.8589502644296393,
+     "p_ideal_exact": "202927/236250",
+     "gpu": 30922256924,
+     "expected": 30922209519.467014,
+     "z": 0.7177917707899805,
+     "exact_match": false
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "B-random-satxo-x",
+   "group": "B",
+   "net": "satxo",
+   "side": "X",
+   "opponent": "random",
+   "p": 0.0,
+   "open_k": 0,
+   "games": 36000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.8645833333333334,
+     "p_implemented": 0.8645833333430346,
+     "p_ideal_exact": "83/96",
+     "gpu": 31124922914,
+     "expected": 31125000000.349247,
+     "z": -1.1873718228819186,
+     "exact_match": false
+    },
+    "draws": {
+     "p_ideal": 0.13541666666666666,
+     "p_implemented": 0.1354166666569654,
+     "p_ideal_exact": "13/96",
+     "gpu": 4875077086,
+     "expected": 4874999999.650754,
+     "z": 1.187371822867229,
+     "exact_match": false
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "B-kid50-satxo-x",
+   "group": "B",
+   "net": "satxo",
+   "side": "X",
+   "opponent": "kid",
+   "p": 0.5,
+   "open_k": 0,
+   "games": 36000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.5013020833333334,
+     "p_implemented": 0.5013020833439441,
+     "p_ideal_exact": "385/768",
+     "gpu": 18046901489,
+     "expected": 18046875000.38199,
+     "z": 0.2792154967319909,
+     "exact_match": false
+    },
+    "draws": {
+     "p_ideal": 0.4986979166666667,
+     "p_implemented": 0.4986979166560559,
+     "p_ideal_exact": "383/768",
+     "gpu": 17953098511,
+     "expected": 17953124999.61801,
+     "z": -0.2792154967319909,
+     "exact_match": false
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "B-kid90-satxo-x",
+   "group": "B",
+   "net": "satxo",
+   "side": "X",
+   "opponent": "kid",
+   "p": 0.9,
+   "open_k": 0,
+   "games": 36000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.10717708333333334,
+     "p_implemented": 0.10717708343544655,
+     "p_ideal_exact": "10289/96000",
+     "gpu": 3858417392,
+     "expected": 3858375003.676076,
+     "z": 0.7222064491951934,
+     "exact_match": false
+    },
+    "draws": {
+     "p_ideal": 0.8928229166666667,
+     "p_implemented": 0.8928229165645535,
+     "p_ideal_exact": "85711/96000",
+     "gpu": 32141582608,
+     "expected": 32141624996.323925,
+     "z": -0.722206449211442,
+     "exact_match": false
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "B-mix25-satxo-x",
+   "group": "B",
+   "net": "satxo",
+   "side": "X",
+   "opponent": "mix",
+   "p": 0.25,
+   "open_k": 0,
+   "games": 36000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.744873046875,
+     "p_implemented": 0.7448730468848055,
+     "p_ideal_exact": "3051/4096",
+     "gpu": 26815366810,
+     "expected": 26815429687.852997,
+     "z": -0.7601987524881622,
+     "exact_match": false
+    },
+    "draws": {
+     "p_ideal": 0.255126953125,
+     "p_implemented": 0.2551269531151945,
+     "p_ideal_exact": "1045/4096",
+     "gpu": 9184633190,
+     "expected": 9184570312.147003,
+     "z": 0.7601987524881622,
+     "exact_match": false
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "B-mix50-satxo-x",
+   "group": "B",
+   "net": "satxo",
+   "side": "X",
+   "opponent": "mix",
+   "p": 0.5,
+   "open_k": 0,
+   "games": 36000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.55859375,
+     "p_implemented": 0.5585937500086402,
+     "p_ideal_exact": "143/256",
+     "gpu": 20109415102,
+     "expected": 20109375000.311047,
+     "z": 0.4256416700653143,
+     "exact_match": false
+    },
+    "draws": {
+     "p_ideal": 0.44140625,
+     "p_implemented": 0.4414062499913598,
+     "p_ideal_exact": "113/256",
+     "gpu": 15890584898,
+     "expected": 15890624999.688953,
+     "z": -0.4256416700653143,
+     "exact_match": false
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "B-mix75-satxo-x",
+   "group": "B",
+   "net": "satxo",
+   "side": "X",
+   "opponent": "mix",
+   "p": 0.75,
+   "open_k": 0,
+   "games": 36000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.3067220052083333,
+     "p_implemented": 0.3067220052139703,
+     "p_ideal_exact": "3769/12288",
+     "gpu": 11042050900,
+     "expected": 11041992187.70293,
+     "z": 0.6710450028113762,
+     "exact_match": false
+    },
+    "draws": {
+     "p_ideal": 0.6932779947916666,
+     "p_implemented": 0.6932779947860297,
+     "p_ideal_exact": "8519/12288",
+     "gpu": 24957949100,
+     "expected": 24958007812.29707,
+     "z": -0.6710450028113762,
+     "exact_match": false
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "B-mix90-satxo-x",
+   "group": "B",
+   "net": "satxo",
+   "side": "X",
+   "opponent": "mix",
+   "p": 0.9,
+   "open_k": 0,
+   "games": 36000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.12817708333333333,
+     "p_implemented": 0.12817708345224407,
+     "p_ideal_exact": "2461/19200",
+     "gpu": 4614265065,
+     "expected": 4614375004.2807865,
+     "z": -1.7333342082740952,
+     "exact_match": false
+    },
+    "draws": {
+     "p_ideal": 0.8718229166666667,
+     "p_implemented": 0.8718229165477559,
+     "p_ideal_exact": "16739/19200",
+     "gpu": 31385734935,
+     "expected": 31385624995.719215,
+     "z": 1.7333342082440235,
+     "exact_match": false
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "B-random-satxo-o",
+   "group": "B",
+   "net": "satxo",
+   "side": "O",
+   "opponent": "random",
+   "p": 0.0,
+   "open_k": 0,
+   "games": 36000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.544973544973545,
+     "p_implemented": 0.5449735448956884,
+     "p_ideal_exact": "103/189",
+     "gpu": 19619075205,
+     "expected": 19619047616.24478,
+     "z": 0.2919946012281866,
+     "exact_match": false
+    },
+    "draws": {
+     "p_ideal": 0.455026455026455,
+     "p_implemented": 0.4550264551043116,
+     "p_ideal_exact": "86/189",
+     "gpu": 16380924795,
+     "expected": 16380952383.755219,
+     "z": -0.2919946012281866,
+     "exact_match": false
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "B-kid50-satxo-o",
+   "group": "B",
+   "net": "satxo",
+   "side": "O",
+   "opponent": "kid",
+   "p": 0.5,
+   "open_k": 0,
+   "games": 36000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.29365079365079366,
+     "p_implemented": 0.2936507936005626,
+     "p_ideal_exact": "37/126",
+     "gpu": 10571459949,
+     "expected": 10571428569.620253,
+     "z": 0.36313472814814995,
+     "exact_match": false
+    },
+    "draws": {
+     "p_ideal": 0.7063492063492064,
+     "p_implemented": 0.7063492063994374,
+     "p_ideal_exact": "89/126",
+     "gpu": 25428540051,
+     "expected": 25428571430.379745,
+     "z": -0.3631347281260774,
+     "exact_match": false
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "B-kid90-satxo-o",
+   "group": "B",
+   "net": "satxo",
+   "side": "O",
+   "opponent": "kid",
+   "p": 0.9,
+   "open_k": 0,
+   "games": 36000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.08497354497354498,
+     "p_implemented": 0.08497354500574336,
+     "p_ideal_exact": "803/9450",
+     "gpu": 3059005745,
+     "expected": 3059047620.206761,
+     "z": -0.791492894349072,
+     "exact_match": false
+    },
+    "draws": {
+     "p_ideal": 0.9150264550264551,
+     "p_implemented": 0.9150264549942566,
+     "p_ideal_exact": "8647/9450",
+     "gpu": 32940994255,
+     "expected": 32940952379.79324,
+     "z": 0.7914928943400592,
+     "exact_match": false
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "B-mix25-satxo-o",
+   "group": "B",
+   "net": "satxo",
+   "side": "O",
+   "opponent": "mix",
+   "p": 0.25,
+   "open_k": 0,
+   "games": 36000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.4299272486772487,
+     "p_implemented": 0.4299272486084774,
+     "p_ideal_exact": "13001/30240",
+     "gpu": 15477455994,
+     "expected": 15477380949.905186,
+     "z": 0.7989188091152499,
+     "exact_match": false
+    },
+    "draws": {
+     "p_ideal": 0.5700727513227514,
+     "p_implemented": 0.5700727513915226,
+     "p_ideal_exact": "17239/30240",
+     "gpu": 20522544006,
+     "expected": 20522619050.094814,
+     "z": -0.7989188091152499,
+     "exact_match": false
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "B-mix50-satxo-o",
+   "group": "B",
+   "net": "satxo",
+   "side": "O",
+   "opponent": "mix",
+   "p": 0.5,
+   "open_k": 0,
+   "games": 36000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.3011904761904762,
+     "p_implemented": 0.3011904761365237,
+     "p_ideal_exact": "253/840",
+     "gpu": 10842822812,
+     "expected": 10842857140.914854,
+     "z": -0.39437447638332757,
+     "exact_match": false
+    },
+    "draws": {
+     "p_ideal": 0.6988095238095238,
+     "p_implemented": 0.6988095238634763,
+     "p_ideal_exact": "587/840",
+     "gpu": 25157177188,
+     "expected": 25157142859.085144,
+     "z": 0.39437447640523937,
+     "exact_match": false
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "B-mix75-satxo-o",
+   "group": "B",
+   "net": "satxo",
+   "side": "O",
+   "opponent": "mix",
+   "p": 0.75,
+   "open_k": 0,
+   "games": 36000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.15810185185185185,
+     "p_implemented": 0.15810185182023032,
+     "p_ideal_exact": "683/4320",
+     "gpu": 5691685389,
+     "expected": 5691666665.528291,
+     "z": 0.2704810682122294,
+     "exact_match": false
+    },
+    "draws": {
+     "p_ideal": 0.8418981481481481,
+     "p_implemented": 0.8418981481797697,
+     "p_ideal_exact": "3637/4320",
+     "gpu": 30308314611,
+     "expected": 30308333334.47171,
+     "z": -0.27048106822600626,
+     "exact_match": false
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "B-mix90-satxo-o",
+   "group": "B",
+   "net": "satxo",
+   "side": "O",
+   "opponent": "mix",
+   "p": 0.9,
+   "open_k": 0,
+   "games": 36000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.06508465608465608,
+     "p_implemented": 0.06508465613023887,
+     "p_ideal_exact": "12301/189000",
+     "gpu": 2343083260,
+     "expected": 2343047620.688599,
+     "z": 0.7614696580061481,
+     "exact_match": false
+    },
+    "draws": {
+     "p_ideal": 0.9349153439153439,
+     "p_implemented": 0.9349153438697612,
+     "p_ideal_exact": "176699/189000",
+     "gpu": 33656916740,
+     "expected": 33656952379.3114,
+     "z": -0.7614696580163363,
+     "exact_match": false
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "C-open1-finisher",
+   "group": "C",
+   "net": "finisher",
+   "side": "both",
+   "opponent": "random",
+   "p": 0.0,
+   "open_k": 1,
+   "games": 5000000000,
+   "exact": {
+    "x_wins": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    },
+    "draws": {
+     "p_ideal": 0.5555555555555556,
+     "p_implemented": 0.5555555559694767,
+     "p_ideal_exact": "5/9",
+     "gpu": 2777780330,
+     "expected": 2777777779.8473835,
+     "z": 0.07257861584938476,
+     "exact_match": false
+    },
+    "o_wins": {
+     "p_ideal": 0.4444444444444444,
+     "p_implemented": 0.4444444440305233,
+     "p_ideal_exact": "4/9",
+     "gpu": 2222219670,
+     "expected": 2222222220.1526165,
+     "z": -0.07257861584938476,
+     "exact_match": false
+    },
+    "lost_from_draw_or_better": {
+     "p_ideal": 0.4444444444444444,
+     "p_implemented": 0.4444444440305233,
+     "p_ideal_exact": "4/9",
+     "gpu": 2222219670,
+     "expected": 2222222220.1526165,
+     "z": -0.07257861584938476,
+     "exact_match": false
+    },
+    "won_not_converted": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "C-open2-finisher",
+   "group": "C",
+   "net": "finisher",
+   "side": "both",
+   "opponent": "random",
+   "p": 0.0,
+   "open_k": 2,
+   "games": 5000000000,
+   "exact": {
+    "x_wins": {
+     "p_ideal": 0.5555555555555556,
+     "p_implemented": 0.5555555555038154,
+     "p_ideal_exact": "5/9",
+     "gpu": 2777725136,
+     "expected": 2777777777.5190773,
+     "z": -1.498203897961848,
+     "exact_match": false
+    },
+    "draws": {
+     "p_ideal": 0.2222222222222222,
+     "p_implemented": 0.22222222221898846,
+     "p_ideal_exact": "2/9",
+     "gpu": 1111164906,
+     "expected": 1111111111.0949423,
+     "z": 1.8299306646727944,
+     "exact_match": false
+    },
+    "o_wins": {
+     "p_ideal": 0.2222222222222222,
+     "p_implemented": 0.22222222227719612,
+     "p_ideal_exact": "2/9",
+     "gpu": 1111109958,
+     "expected": 1111111111.3859806,
+     "z": -0.03923450318677427,
+     "exact_match": false
+    },
+    "lost_from_draw_or_better": {
+     "p_ideal": 0.2777777777777778,
+     "p_implemented": 0.27777777778101154,
+     "p_ideal_exact": "5/18",
+     "gpu": 1388897316,
+     "expected": 1388888888.9050577,
+     "z": 0.26607784314984884,
+     "exact_match": false
+    },
+    "won_not_converted": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "C-open3-finisher",
+   "group": "C",
+   "net": "finisher",
+   "side": "both",
+   "opponent": "random",
+   "p": 0.0,
+   "open_k": 3,
+   "games": 5000000000,
+   "exact": {
+    "x_wins": {
+     "p_ideal": 0.36507936507936506,
+     "p_implemented": 0.36507936512833344,
+     "p_ideal_exact": "23/63",
+     "gpu": 1825352428,
+     "expected": 1825396825.6416671,
+     "z": -1.304131951330329,
+     "exact_match": false
+    },
+    "draws": {
+     "p_ideal": 0.24603174603174602,
+     "p_implemented": 0.24603174608810582,
+     "p_ideal_exact": "31/126",
+     "gpu": 1230187816,
+     "expected": 1230158730.440529,
+     "z": 0.9550372595950012,
+     "exact_match": false
+    },
+    "o_wins": {
+     "p_ideal": 0.3888888888888889,
+     "p_implemented": 0.38888888878356076,
+     "p_ideal_exact": "7/18",
+     "gpu": 1944459756,
+     "expected": 1944444443.9178038,
+     "z": 0.4441977886096256,
+     "exact_match": false
+    },
+    "lost_from_draw_or_better": {
+     "p_ideal": 0.3968253968253968,
+     "p_implemented": 0.3968253967256123,
+     "p_ideal_exact": "25/63",
+     "gpu": 1984105867,
+     "expected": 1984126983.6280613,
+     "z": -0.6104053271940072,
+     "exact_match": false
+    },
+    "won_not_converted": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "C-open1-satxo",
+   "group": "C",
+   "net": "satxo",
+   "side": "both",
+   "opponent": "random",
+   "p": 0.0,
+   "open_k": 1,
+   "games": 5000000000,
+   "exact": {
+    "x_wins": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    },
+    "draws": {
+     "p_ideal": 1.0,
+     "p_implemented": 1.0,
+     "p_ideal_exact": "1",
+     "gpu": 5000000000,
+     "expected": 5000000000.0,
+     "z": null,
+     "exact_match": true
+    },
+    "o_wins": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    },
+    "lost_from_draw_or_better": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    },
+    "won_not_converted": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "C-open2-satxo",
+   "group": "C",
+   "net": "satxo",
+   "side": "both",
+   "opponent": "random",
+   "p": 0.0,
+   "open_k": 2,
+   "games": 5000000000,
+   "exact": {
+    "x_wins": {
+     "p_ideal": 0.3888888888888889,
+     "p_implemented": 0.3888888889923692,
+     "p_ideal_exact": "7/18",
+     "gpu": 1944434292,
+     "expected": 1944444444.9618459,
+     "z": -0.29453363308380937,
+     "exact_match": false
+    },
+    "draws": {
+     "p_ideal": 0.4444444444444444,
+     "p_implemented": 0.4444444444961846,
+     "p_ideal_exact": "4/9",
+     "gpu": 2222200028,
+     "expected": 2222222222.4809227,
+     "z": -0.6316660008006046,
+     "exact_match": false
+    },
+    "o_wins": {
+     "p_ideal": 0.16666666666666666,
+     "p_implemented": 0.16666666651144624,
+     "p_ideal_exact": "1/6",
+     "gpu": 833365680,
+     "expected": 833333332.5572312,
+     "z": 1.2274991480339583,
+     "exact_match": false
+    },
+    "lost_from_draw_or_better": {
+     "p_ideal": 0.16666666666666666,
+     "p_implemented": 0.16666666651144624,
+     "p_ideal_exact": "1/6",
+     "gpu": 833365680,
+     "expected": 833333332.5572312,
+     "z": 1.2274991480339583,
+     "exact_match": false
+    },
+    "won_not_converted": {
+     "p_ideal": 0.16666666666666666,
+     "p_implemented": 0.1666666667733807,
+     "p_ideal_exact": "1/6",
+     "gpu": 833327053,
+     "expected": 833333333.8669035,
+     "z": -0.23834214108575488,
+     "exact_match": false
+    }
+   }
+  },
+  {
+   "name": "C-open3-satxo",
+   "group": "C",
+   "net": "satxo",
+   "side": "both",
+   "opponent": "random",
+   "p": 0.0,
+   "open_k": 3,
+   "games": 5000000000,
+   "exact": {
+    "x_wins": {
+     "p_ideal": 0.1746031746031746,
+     "p_implemented": 0.17460317463505023,
+     "p_ideal_exact": "11/63",
+     "gpu": 873022681,
+     "expected": 873015873.1752511,
+     "z": 0.25360972329675563,
+     "exact_match": false
+    },
+    "draws": {
+     "p_ideal": 0.4523809523809524,
+     "p_implemented": 0.4523809524313066,
+     "p_ideal_exact": "19/42",
+     "gpu": 2261900132,
+     "expected": 2261904762.1565332,
+     "z": -0.1315586000355398,
+     "exact_match": false
+    },
+    "o_wins": {
+     "p_ideal": 0.373015873015873,
+     "p_implemented": 0.37301587293364313,
+     "p_ideal_exact": "47/126",
+     "gpu": 1865077187,
+     "expected": 1865079364.6682158,
+     "z": -0.06368171939509154,
+     "exact_match": false
+    },
+    "lost_from_draw_or_better": {
+     "p_ideal": 0.2857142857142857,
+     "p_implemented": 0.2857142857008887,
+     "p_ideal_exact": "2/7",
+     "gpu": 1428524382,
+     "expected": 1428571428.5044436,
+     "z": -1.4727885485770384,
+     "exact_match": false
+    },
+    "won_not_converted": {
+     "p_ideal": 0.1111111111111111,
+     "p_implemented": 0.11111111115499785,
+     "p_ideal_exact": "1/9",
+     "gpu": 555573057,
+     "expected": 555555555.7749892,
+     "z": 0.7875551253477777,
+     "exact_match": false
+    }
+   }
+  },
+  {
+   "name": "A-perfect-xonly-x",
+   "group": "A",
+   "net": "xonly",
+   "side": "X",
+   "opponent": "perfect",
+   "p": 0.0,
+   "open_k": 0,
+   "games": 260000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    },
+    "draws": {
+     "p_ideal": 1.0,
+     "p_implemented": 1.0,
+     "p_ideal_exact": "1",
+     "gpu": 260000000000,
+     "expected": 260000000000.0,
+     "z": null,
+     "exact_match": true
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "B-random-xonly-x",
+   "group": "B",
+   "net": "xonly",
+   "side": "X",
+   "opponent": "random",
+   "p": 0.0,
+   "open_k": 0,
+   "games": 36000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.9010416666666666,
+     "p_implemented": 0.9010416666533274,
+     "p_ideal_exact": "173/192",
+     "gpu": 32437581198,
+     "expected": 32437499999.519787,
+     "z": 1.4331710501880195,
+     "exact_match": false
+    },
+    "draws": {
+     "p_ideal": 0.09895833333333333,
+     "p_implemented": 0.09895833334667259,
+     "p_ideal_exact": "19/192",
+     "gpu": 3562418802,
+     "expected": 3562500000.480213,
+     "z": -1.4331710501880195,
+     "exact_match": false
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "B-kid50-xonly-x",
+   "group": "B",
+   "net": "xonly",
+   "side": "X",
+   "opponent": "kid",
+   "p": 0.5,
+   "open_k": 0,
+   "games": 36000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.57421875,
+     "p_implemented": 0.5742187499913598,
+     "p_ideal_exact": "147/256",
+     "gpu": 20671768425,
+     "expected": 20671874999.688953,
+     "z": -1.135980489403794,
+     "exact_match": false
+    },
+    "draws": {
+     "p_ideal": 0.42578125,
+     "p_implemented": 0.4257812500086402,
+     "p_ideal_exact": "109/256",
+     "gpu": 15328231575,
+     "expected": 15328125000.311047,
+     "z": 1.135980489403794,
+     "exact_match": false
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "B-kid90-xonly-x",
+   "group": "B",
+   "net": "xonly",
+   "side": "X",
+   "opponent": "kid",
+   "p": 0.9,
+   "open_k": 0,
+   "games": 36000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.13688541666666668,
+     "p_implemented": 0.13688541678687396,
+     "p_ideal_exact": "13141/96000",
+     "gpu": 4927773466,
+     "expected": 4927875004.327463,
+     "z": -1.5569187054887033,
+     "exact_match": false
+    },
+    "draws": {
+     "p_ideal": 0.8631145833333334,
+     "p_implemented": 0.8631145832131261,
+     "p_ideal_exact": "82859/96000",
+     "gpu": 31072226534,
+     "expected": 31072124995.67254,
+     "z": 1.5569187054594573,
+     "exact_match": false
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "B-mix25-xonly-x",
+   "group": "B",
+   "net": "xonly",
+   "side": "X",
+   "opponent": "mix",
+   "p": 0.25,
+   "open_k": 0,
+   "games": 36000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.81280517578125,
+     "p_implemented": 0.8128051757661581,
+     "p_ideal_exact": "13317/16384",
+     "gpu": 29260917907,
+     "expected": 29260986327.58169,
+     "z": -0.9244754083760666,
+     "exact_match": false
+    },
+    "draws": {
+     "p_ideal": 0.18719482421875,
+     "p_implemented": 0.18719482423384193,
+     "p_ideal_exact": "3067/16384",
+     "gpu": 6739082093,
+     "expected": 6739013672.418309,
+     "z": 0.9244754083631809,
+     "exact_match": false
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "B-mix50-xonly-x",
+   "group": "B",
+   "net": "xonly",
+   "side": "X",
+   "opponent": "mix",
+   "p": 0.5,
+   "open_k": 0,
+   "games": 36000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.6588541666666666,
+     "p_implemented": 0.6588541666519632,
+     "p_ideal_exact": "253/384",
+     "gpu": 23718840939,
+     "expected": 23718749999.470673,
+     "z": 1.0109665067314573,
+     "exact_match": false
+    },
+    "draws": {
+     "p_ideal": 0.3411458333333333,
+     "p_implemented": 0.34114583334803683,
+     "p_ideal_exact": "131/384",
+     "gpu": 12281159061,
+     "expected": 12281250000.529325,
+     "z": -1.0109665067102536,
+     "exact_match": false
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "B-mix75-xonly-x",
+   "group": "B",
+   "net": "xonly",
+   "side": "X",
+   "opponent": "mix",
+   "p": 0.75,
+   "open_k": 0,
+   "games": 36000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.4025675455729167,
+     "p_implemented": 0.402567545562448,
+     "p_ideal_exact": "19787/49152",
+     "gpu": 14492470400,
+     "expected": 14492431640.248129,
+     "z": 0.41654886198989155,
+     "exact_match": false
+    },
+    "draws": {
+     "p_ideal": 0.5974324544270834,
+     "p_implemented": 0.597432454437552,
+     "p_ideal_exact": "29365/49152",
+     "gpu": 21507529600,
+     "expected": 21507568359.751873,
+     "z": -0.4165488620103897,
+     "exact_match": false
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  },
+  {
+   "name": "B-mix90-xonly-x",
+   "group": "B",
+   "net": "xonly",
+   "side": "X",
+   "opponent": "mix",
+   "p": 0.9,
+   "open_k": 0,
+   "games": 36000000000,
+   "exact": {
+    "wins": {
+     "p_ideal": 0.18169791666666665,
+     "p_implemented": 0.18169791681716574,
+     "p_ideal_exact": "17443/96000",
+     "gpu": 6540977472,
+     "expected": 6541125005.417966,
+     "z": -2.016542368529997,
+     "exact_match": false
+    },
+    "draws": {
+     "p_ideal": 0.8183020833333333,
+     "p_implemented": 0.8183020831828343,
+     "p_ideal_exact": "78557/96000",
+     "gpu": 29459022528,
+     "expected": 29458874994.582035,
+     "z": 2.016542368516962,
+     "exact_match": false
+    },
+    "losses": {
+     "p_ideal": 0.0,
+     "p_implemented": 0.0,
+     "p_ideal_exact": "0",
+     "gpu": 0,
+     "expected": 0.0,
+     "z": null,
+     "exact_match": true
+    }
+   }
+  }
+ ]
+}

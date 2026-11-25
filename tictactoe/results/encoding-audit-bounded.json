@@ -1,0 +1,7 @@
+{
+ "what": "tests/test_encoding_audit.py test_verdict_bounded_h4 test_verdict_bounded_h2: the bounded-bias CNF (cnfproof.build bias small, strong, the mode of the H=2 certificate), pinned networks, SAT iff net.verify says never loses",
+ "ranAt": "2026-11-23, python-sat 1.9.dev24 (CaDiCaL 1.9.5)",
+ "result": "2 of 2 PASS",
+ "stats": {"verdict_bounded_h2": 100, "verdict_bounded_h4": {"never_loses": 63, "loses": 279, "outside_box": 0}},
+ "seconds": {"test_verdict_bounded_h4": 41.6, "test_verdict_bounded_h2": 7.8}
+}

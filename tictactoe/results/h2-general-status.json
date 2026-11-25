@@ -1,0 +1,18 @@
+{
+  "claim": "No width-2 net never loses (symmetry canonicalisation), for any integer biases",
+  "recordedAt": "2026-11-23",
+  "source": "the solver logs and results of the width-2 general run; read only, no job started or stopped",
+  "state": "unresolved",
+  "started": "2026-11-22T16:41:08Z",
+  "members": [
+    {"solver": "CaDiCaL 3.1.0", "cnf": "h2gu.cnf", "cnfSha256": "478667d6ba99df44fa5e062e40e7fda06f5c574389c3297b7dace7a3b3a4451c",
+     "requireUsed": true, "solverPrinted": "s UNSATISFIABLE", "proofFormat": "LRAT (text)", "proofBytes": 133749476390,
+     "proofChecked": false, "note": "xz compression of the proof exited 1 with the disk full; log ends 2026-11-23T16:32Z"},
+    {"solver": "kissat 4.0.4", "cnf": "h2gu.cnf", "requireUsed": true, "status": "UNKNOWN", "seconds": 106587.2,
+     "note": "fatal error writing the DRAT proof (disk full)"},
+    {"solver": "CaDiCaL 3.1.0", "cnf": "h2g.cnf", "cnfSha256": "98ecd50ce999f24c43a3ac0d222fc96e5dd5c71c4f6b1c521fb4beac6fd59393",
+     "requireUsed": false, "solverPrinted": "s UNSATISFIABLE", "proofFormat": "LRAT (text)", "proofBytes": 162986190903,
+     "proofChecked": false, "note": "xz compression of the proof exited 1 with the disk full; log ends 2026-11-23T16:32Z"}
+  ],
+  "paper": "Reported as unresolved: two solver runs printed UNSAT but neither proof has been checked."
+}

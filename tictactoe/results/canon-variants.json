@@ -1,0 +1,10 @@
+{
+ "what": "fixed orders (of 362,880) that never lose as X on the canonical board, by canonical form",
+ "counts": {
+  "paper: min, empty < X < O": 146,
+  "max, empty < X < O": 432,
+  "min, empty < O < X": 0,
+  "min, X < O < empty": 516,
+  "min, O < X < empty": 432
+ }
+}
