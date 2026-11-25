@@ -1,0 +1,278 @@
+[
+{
+"name": "xo-sym-H1-general",
+"args": [
+"--hidden",
+"1",
+"--sym",
+"--sides",
+"xo",
+"--bias",
+"general"
+],
+"timeout": 3600
+},
+{
+"name": "x-raw-H1",
+"args": [
+"--hidden",
+"1",
+"--sides",
+"x"
+],
+"timeout": 21600
+},
+{
+"name": "x-raw-H2",
+"args": [
+"--hidden",
+"2",
+"--sides",
+"x"
+],
+"timeout": 21600
+},
+{
+"name": "x-raw-H3",
+"args": [
+"--hidden",
+"3",
+"--sides",
+"x"
+],
+"timeout": 21600
+},
+{
+"name": "x-raw-H4",
+"args": [
+"--hidden",
+"4",
+"--sides",
+"x"
+],
+"timeout": 21600
+},
+{
+"name": "xo-sym-H2",
+"args": [
+"--hidden",
+"2",
+"--sym",
+"--sides",
+"xo"
+],
+"timeout": 21600
+},
+{
+"name": "xo-sym-H3",
+"args": [
+"--hidden",
+"3",
+"--sym",
+"--sides",
+"xo"
+],
+"timeout": 21600
+},
+{
+"name": "xo-sym-H4",
+"args": [
+"--hidden",
+"4",
+"--sym",
+"--sides",
+"xo"
+],
+"timeout": 21600
+},
+{
+"name": "xo-sym-H5",
+"args": [
+"--hidden",
+"5",
+"--sym",
+"--sides",
+"xo"
+],
+"timeout": 21600
+},
+{
+"name": "xo-sym-H6",
+"args": [
+"--hidden",
+"6",
+"--sym",
+"--sides",
+"xo"
+],
+"timeout": 21600
+},
+{
+"name": "xo-sym-H7",
+"args": [
+"--hidden",
+"7",
+"--sym",
+"--sides",
+"xo"
+],
+"timeout": 21600
+},
+{
+"name": "xo-sym-H8",
+"args": [
+"--hidden",
+"8",
+"--sym",
+"--sides",
+"xo"
+],
+"timeout": 21600
+},
+{
+"name": "x-raw-H1-minnz",
+"args": [
+"--hidden",
+"1",
+"--sides",
+"x",
+"--min-nonzero"
+],
+"timeout": 21600
+},
+{
+"name": "x-raw-H1-minnz-general",
+"args": [
+"--hidden",
+"1",
+"--sides",
+"x",
+"--min-nonzero",
+"--bias",
+"general"
+],
+"timeout": 21600
+},
+{
+"name": "xo-sym-H6-nz45",
+"args": [
+"--hidden",
+"6",
+"--sym",
+"--sides",
+"xo",
+"--min-nonzero",
+"--max-nonzero",
+"45"
+],
+"timeout": 21600
+},
+{
+"name": "xo-sym-H5-nz45",
+"args": [
+"--hidden",
+"5",
+"--sym",
+"--sides",
+"xo",
+"--min-nonzero",
+"--max-nonzero",
+"45"
+],
+"timeout": 21600
+},
+{
+"name": "xo-sym-H7-nz45",
+"args": [
+"--hidden",
+"7",
+"--sym",
+"--sides",
+"xo",
+"--min-nonzero",
+"--max-nonzero",
+"45"
+],
+"timeout": 21600
+},
+{
+"name": "xo-raw-H1",
+"args": [
+"--hidden",
+"1",
+"--sides",
+"xo"
+],
+"timeout": 7200
+},
+{
+"name": "xo-raw-H1-general",
+"args": [
+"--hidden",
+"1",
+"--sides",
+"xo",
+"--bias",
+"general"
+],
+"timeout": 7200
+},
+{
+"name": "xo-sym-H2-unary",
+"args": [
+"--hidden",
+"2",
+"--sym",
+"--sides",
+"xo",
+"--enc",
+"unary"
+],
+"timeout": 21600
+},
+{
+"name": "xo-sym-H1-cpsat",
+"args": [
+"--hidden",
+"1",
+"--sym",
+"--sides",
+"xo",
+"--engine",
+"cpsat",
+"--workers",
+"4"
+],
+"timeout": 3600
+},
+{
+"name": "xo-raw-H8",
+"args": [
+"--hidden",
+"8",
+"--sides",
+"xo"
+],
+"timeout": 21600
+},
+{
+"name": "xo-raw-H12",
+"args": [
+"--hidden",
+"12",
+"--sides",
+"xo"
+],
+"timeout": 21600
+},
+{
+"name": "xo-raw-H16",
+"args": [
+"--hidden",
+"16",
+"--sides",
+"xo"
+],
+"timeout": 21600
+}
+]

@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+nets/
+humanity-run/
+proof/
+tools/
+tictactoe/humanity/ttt_cpu
+tictactoe/humanity/ttt_gpu

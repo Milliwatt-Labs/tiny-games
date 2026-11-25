@@ -1,0 +1,19 @@
+{
+ "title": "Tic-tac-toe against a ternary model",
+ "net.label": "Ternary model (every weight is −1, 0 or +1): parameters (nonzero weights)",
+ "net.name": "{params} ({nonzero})",
+ "side.label": "You play",
+ "side.x": "X",
+ "side.o": "O",
+ "newGame": "New game",
+ "status.yourMove": "Your move",
+ "status.thinking": "…",
+ "status.win": "You win",
+ "status.draw": "Draw",
+ "status.loss": "You lose",
+ "tally.wins": "Wins",
+ "tally.draws": "Draws",
+ "tally.losses": "Losses",
+ "cell": "Cell",
+ "home": "Milliwatt Labs"
+}

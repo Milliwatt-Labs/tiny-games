@@ -1,0 +1,4 @@
+# Tests and the verifier. The reference forward pass and the verifier need only the standard library;
+# numpy enables the batched path, which the tests check against the reference.
+pytest>=7
+numpy>=1.24

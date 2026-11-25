@@ -1,0 +1,28 @@
+[
+{
+"name": "xo-sym-H2-full",
+"args": [
+"--hidden",
+"2",
+"--sym",
+"--sides",
+"xo",
+"--full"
+],
+"timeout": 21600
+},
+{
+"name": "xo-sym-H2-unary-full",
+"args": [
+"--hidden",
+"2",
+"--sym",
+"--sides",
+"xo",
+"--full",
+"--enc",
+"unary"
+],
+"timeout": 21600
+}
+]

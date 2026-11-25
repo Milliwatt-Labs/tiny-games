@@ -1,0 +1,699 @@
+{
+ "generated": "2026-11-23T22:31:19-0500",
+ "note": "Proofs are kept on the build hosts, never in git. cnfSha256 / proof sha256 are of the uncompressed files. A checker certifies that the CNF file is unsatisfiable; that the CNF encodes the never-lose condition rests on cnfproof.py / satnet.py and tests/test_cnfproof.py, tests/test_encoding_audit.py.",
+ "tools": {
+  "cadical": "CaDiCaL 3.1.0 (git e4d9bd93af444c6575a908a24da2c4130cb2a1c7)",
+  "kissat": "kissat 4.0.4 (git 8af8e56f174b778aef3aa45af9f739b2a5f492c2)",
+  "lrat-check": "lrat-check from drat-trim (git 2e3b2dc0ecf938addbd779d42877b6ed69d9a985)",
+  "drat-trim": "drat-trim (git 2e3b2dc0ecf938addbd779d42877b6ed69d9a985)",
+  "cake_lpr": "cake_lpr (git 033aad53d1733bd4b8ca41cf6f1b5fb5d84f8de2; CakeML 665f9b2, HOL4 9783a49), ARMv8 build",
+  "pysat-cadical195": "CaDiCaL 1.9.5 via python-sat (incremental, no proof output)"
+ },
+ "certificates": [
+  {
+   "claim": "No width-1 net never loses as X and as O (symmetry canonicalisation), for any integer biases",
+   "name": "h1-general-sym",
+   "host": "build host",
+   "cnf": "proof/cnf/h1p.cnf",
+   "cnfSha256": "40f146598702bf4249f6399cc20883a1cdf8ea7268a6c5d3b1996210a86d0d66",
+   "vars": 209236,
+   "clauses": 922159,
+   "encoding": {
+    "hidden": 1,
+    "bias": "general",
+    "require_used": false,
+    "strong": true,
+    "enc": "binary",
+    "positions": 627
+   },
+   "solver": {
+    "name": "cadical",
+    "version": "CaDiCaL 3.1.0 (git e4d9bd93af444c6575a908a24da2c4130cb2a1c7)",
+    "flags": "-q --seed=0 --lrat=true --binary=false"
+   },
+   "solveSeconds": 59.5,
+   "proof": {
+    "path": "proof/cnf/h1p.cadical0.lrat.xz",
+    "format": "LRAT (text), stored xz",
+    "bytes": 91256808,
+    "sha256": "4c77a940821e7c7a649706d7cafe94f20e588a7f8b0f1f5cd136380557b0482b"
+   },
+   "checks": [
+    {
+     "checker": "lrat-check",
+     "version": "lrat-check from drat-trim (git 2e3b2dc0ecf938addbd779d42877b6ed69d9a985)",
+     "result": "VERIFIED",
+     "seconds": 1.1,
+     "when": "during the run (cnfproof.py solve)"
+    },
+    {
+     "checker": "lrat-check",
+     "version": "lrat-check from drat-trim (git 2e3b2dc0ecf938addbd779d42877b6ed69d9a985)",
+     "result": "VERIFIED",
+     "seconds": 1.1,
+     "when": "recheck (certify.py)"
+    },
+    {
+     "checker": "cake_lpr",
+     "version": "cake_lpr (git 033aad53d1733bd4b8ca41cf6f1b5fb5d84f8de2; CakeML 665f9b2, HOL4 9783a49), ARMv8 build",
+     "result": "VERIFIED",
+     "seconds": 42.0,
+     "when": "recheck (certify.py)"
+    }
+   ],
+   "dependsOn": [],
+   "result": "UNSAT"
+  },
+  {
+   "claim": "No width-1 net never loses as X and as O (symmetry canonicalisation), for any integer biases",
+   "name": "h1-general-sym-kissat",
+   "host": "build host",
+   "cnf": "proof/cnf/h1p.cnf",
+   "cnfSha256": "40f146598702bf4249f6399cc20883a1cdf8ea7268a6c5d3b1996210a86d0d66",
+   "vars": 209236,
+   "clauses": 922159,
+   "encoding": {
+    "hidden": 1,
+    "bias": "general",
+    "require_used": false,
+    "strong": true,
+    "enc": "binary",
+    "sides": "xo",
+    "sym": true,
+    "positions": 627,
+    "max_nonzero": null
+   },
+   "solver": {
+    "name": "kissat",
+    "version": "kissat 4.0.4 (git 8af8e56f174b778aef3aa45af9f739b2a5f492c2)",
+    "flags": "-q --seed=0",
+    "proofFormat": "DRAT (binary)"
+   },
+   "solveSeconds": 75.0,
+   "proof": {
+    "path": "certify/proofs/h1p.kissat0.drat.xz",
+    "format": "DRAT (binary), stored xz",
+    "bytes": 45595285,
+    "sha256": "fe63fa11579d5824f0b3af2f5f594a20e7318c870ee2bb3b15e103174996130a",
+    "bytesXz": 11549096
+   },
+   "checks": [
+    {
+     "checker": "drat-trim",
+     "version": "drat-trim (git 2e3b2dc0ecf938addbd779d42877b6ed69d9a985)",
+     "result": "VERIFIED",
+     "seconds": 12.6
+    }
+   ],
+   "dependsOn": [],
+   "result": "UNSAT"
+  },
+  {
+   "claim": "No width-1 net never loses as X and as O without symmetry canonicalisation, for any integer biases",
+   "name": "h1-raw-general-cadical",
+   "host": "build host",
+   "cnf": "certify/cnf/h1r.cnf",
+   "cnfSha256": "99f81cd48305be3d24f6038027478b3842087c35c1c0a3270c3a7aa7a08dbe93",
+   "vars": 1480878,
+   "clauses": 6507866,
+   "encoding": {
+    "hidden": 1,
+    "bias": "general",
+    "require_used": false,
+    "strong": true,
+    "enc": "binary",
+    "sides": "xo",
+    "sym": false,
+    "positions": 4520,
+    "max_nonzero": null
+   },
+   "solver": {
+    "name": "cadical",
+    "version": "CaDiCaL 3.1.0 (git e4d9bd93af444c6575a908a24da2c4130cb2a1c7)",
+    "flags": "-q --seed=0 --lrat=true --binary=false",
+    "proofFormat": "LRAT (text)"
+   },
+   "solveSeconds": 492.5,
+   "proof": {
+    "path": "certify/proofs/h1r.cadical0.lrat.xz",
+    "format": "LRAT (text), stored xz",
+    "bytes": 424453481,
+    "sha256": "7dd3b528b0022031a2eda2067e4eb6356f33829f79c2f10cd5c7a5808f3ed1e8",
+    "bytesXz": 58160520
+   },
+   "checks": [
+    {
+     "checker": "lrat-check",
+     "version": "lrat-check from drat-trim (git 2e3b2dc0ecf938addbd779d42877b6ed69d9a985)",
+     "result": "VERIFIED",
+     "seconds": 7.2
+    },
+    {
+     "checker": "cake_lpr",
+     "version": "cake_lpr (git 033aad53d1733bd4b8ca41cf6f1b5fb5d84f8de2; CakeML 665f9b2, HOL4 9783a49), ARMv8 build",
+     "result": "VERIFIED",
+     "seconds": 22.9
+    }
+   ],
+   "dependsOn": [],
+   "result": "UNSAT"
+  },
+  {
+   "claim": "No width-2 net never loses (symmetry), for b1 in [-3, 3] and b2 spread at most 12",
+   "name": "h2-bounded-sym-kissat",
+   "host": "build host",
+   "cnf": "certify/cnf/h2s.cnf",
+   "cnfSha256": "f860a579237e49787a7f81d53ce432fc9e9f0211a286a49c08f1346f09d39afe",
+   "vars": 298341,
+   "clauses": 1266252,
+   "encoding": {
+    "hidden": 2,
+    "bias": "small",
+    "require_used": false,
+    "strong": true,
+    "enc": "binary",
+    "sides": "xo",
+    "sym": true,
+    "positions": 627,
+    "max_nonzero": null
+   },
+   "solver": {
+    "name": "kissat",
+    "version": "kissat 4.0.4 (git 8af8e56f174b778aef3aa45af9f739b2a5f492c2)",
+    "flags": "-q --seed=0",
+    "proofFormat": "DRAT (binary)"
+   },
+   "solveSeconds": 3789.2,
+   "proof": {
+    "path": "certify/proofs/h2s.kissat0.drat.xz",
+    "format": "DRAT (binary), stored xz",
+    "bytes": 1095976681,
+    "sha256": "87ee9a0986aa0c346e326c3c13e4252d4782f8068c4670b31503ab481add8ddb",
+    "bytesXz": 381334252
+   },
+   "checks": [
+    {
+     "checker": "drat-trim",
+     "version": "drat-trim (git 2e3b2dc0ecf938addbd779d42877b6ed69d9a985)",
+     "result": "VERIFIED",
+     "seconds": 2474.8
+    }
+   ],
+   "dependsOn": [],
+   "result": "UNSAT"
+  },
+  {
+   "claim": "No width-2 net never loses (symmetry), for b1 in [-3, 3] and b2 spread at most 12",
+   "name": "h2-bounded-sym-cadical",
+   "host": "build host",
+   "cnf": "certify/cnf/h2s.cnf",
+   "cnfSha256": "f860a579237e49787a7f81d53ce432fc9e9f0211a286a49c08f1346f09d39afe",
+   "vars": 298341,
+   "clauses": 1266252,
+   "encoding": {
+    "hidden": 2,
+    "bias": "small",
+    "require_used": false,
+    "strong": true,
+    "enc": "binary",
+    "sides": "xo",
+    "sym": true,
+    "positions": 627,
+    "max_nonzero": null
+   },
+   "solver": {
+    "name": "cadical",
+    "version": "CaDiCaL 3.1.0 (git e4d9bd93af444c6575a908a24da2c4130cb2a1c7)",
+    "flags": "-q --seed=0 --lrat=true --binary=false",
+    "proofFormat": "LRAT (text)"
+   },
+   "solveSeconds": 4822.5,
+   "proof": {
+    "path": "certify/proofs/h2s.cadical0.lrat.xz",
+    "format": "LRAT (text), stored xz",
+    "bytes": 6062067265,
+    "sha256": "5c0dda849f9db6b0c86c0ef065305b5f9a2beca28f08a0294faf0f6694c041cf",
+    "bytesXz": 782295696
+   },
+   "checks": [
+    {
+     "checker": "lrat-check",
+     "version": "lrat-check from drat-trim (git 2e3b2dc0ecf938addbd779d42877b6ed69d9a985)",
+     "result": "VERIFIED",
+     "seconds": 57.6
+    },
+    {
+     "checker": "cake_lpr",
+     "version": "cake_lpr (git 033aad53d1733bd4b8ca41cf6f1b5fb5d84f8de2; CakeML 665f9b2, HOL4 9783a49), ARMv8 build",
+     "result": "VERIFIED",
+     "seconds": 212.8
+    }
+   ],
+   "dependsOn": [],
+   "result": "UNSAT"
+  },
+  {
+   "claim": "No width-1 net never loses as X and as O without symmetry canonicalisation, for any integer biases",
+   "name": "h1-raw-general-kissat",
+   "host": "build host",
+   "cnf": "certify/cnf/h1r.cnf",
+   "cnfSha256": "99f81cd48305be3d24f6038027478b3842087c35c1c0a3270c3a7aa7a08dbe93",
+   "vars": 1480878,
+   "clauses": 6507866,
+   "encoding": {
+    "hidden": 1,
+    "bias": "general",
+    "require_used": false,
+    "strong": true,
+    "enc": "binary",
+    "sides": "xo",
+    "sym": false,
+    "positions": 4520,
+    "max_nonzero": null
+   },
+   "solver": {
+    "name": "kissat",
+    "version": "kissat 4.0.4 (git 8af8e56f174b778aef3aa45af9f739b2a5f492c2)",
+    "flags": "-q --seed=0",
+    "proofFormat": "DRAT (binary)"
+   },
+   "solveSeconds": 403.1,
+   "proof": {
+    "path": "certify/proofs/h1r.kissat0.drat.xz",
+    "format": "DRAT (binary), stored xz",
+    "bytes": 200205507,
+    "sha256": "2d488d08f7e9de8c63d2e0bc6279b47ab4feaecefa846a7b6ec1edbcf791e722",
+    "bytesXz": 44192700
+   },
+   "checks": [
+    {
+     "checker": "drat-trim",
+     "version": "drat-trim (git 2e3b2dc0ecf938addbd779d42877b6ed69d9a985)",
+     "result": "VERIFIED",
+     "seconds": 183.2
+    }
+   ],
+   "dependsOn": [],
+   "result": "UNSAT"
+  },
+  {
+   "claim": "No width-2 net never loses (symmetry), for any integer biases",
+   "name": "h2-general-sym",
+   "host": "build host",
+   "cnf": "proof/cnf/h2gu.cnf (require-used) and h2g.cnf",
+   "result": "UNKNOWN",
+   "dependsOn": [
+    "h1-general-sym (for require-used in h2gu.cnf)"
+   ],
+   "solver": {
+    "members": "CaDiCaL LRAT on h2gu.cnf and h2g.cnf, kissat DRAT on h2gu.cnf"
+   },
+   "status": {
+    "state": "failed-timeout",
+    "name": "h2-general",
+    "pid": 772154,
+    "started": "2026-11-22T16:41:08+0000",
+    "updatedAt": "2026-11-23T22:17:45+0000",
+    "wallHours": 29.61,
+    "timeout": null,
+    "running": [],
+    "results": [
+     {
+      "solver": "kissat",
+      "seed": 0,
+      "cnf": "cnf/h2gu.cnf",
+      "status": "UNKNOWN",
+      "seconds": 106587.2,
+      "verified": null,
+      "checkSeconds": null,
+      "nonzero": null
+     }
+    ],
+    "memFreeGB": 59.8
+   },
+   "rows": [
+    {
+     "cnf": "cnf/h2gu.cnf",
+     "cnfSha256": "478667d6ba99df44fa5e062e40e7fda06f5c574389c3297b7dace7a3b3a4451c",
+     "hidden": 2,
+     "bias": "general",
+     "require_used": true,
+     "strong": true,
+     "enc": "binary",
+     "max_nonzero": null,
+     "vars": 362009,
+     "clauses": 1560647,
+     "solver": "kissat",
+     "seed": 0,
+     "extra": "",
+     "status": "UNKNOWN",
+     "seconds": 106587.2,
+     "finishedAt": "2026-11-23T22:17:36+0000"
+    }
+   ],
+   "cnfs": {
+    "h2gu.cnf": {
+     "cnfSha256": "478667d6ba99df44fa5e062e40e7fda06f5c574389c3297b7dace7a3b3a4451c",
+     "vars": 362009,
+     "clauses": 1560647,
+     "encoding": {
+      "hidden": 2,
+      "bias": "general",
+      "require_used": true,
+      "strong": true,
+      "enc": "binary",
+      "positions": 627
+     }
+    },
+    "h2g.cnf": {
+     "cnfSha256": "98ecd50ce999f24c43a3ac0d222fc96e5dd5c71c4f6b1c521fb4beac6fd59393",
+     "vars": 362011,
+     "clauses": 1560649,
+     "encoding": {
+      "hidden": 2,
+      "bias": "general",
+      "require_used": false,
+      "strong": true,
+      "enc": "binary",
+      "positions": 627
+     }
+    }
+   }
+  },
+  {
+   "claim": "No width-3 net never loses (symmetry), for any integer biases",
+   "name": "h3-general-cnc",
+   "host": "build host",
+   "cnf": "proof/cnf/h3p.cnf",
+   "cnfSha256": "6806f90c7fb49c3ed67cdc65e8cff3cb1ca6f18f88306d3643a5547aeb9e1d63",
+   "result": "RUNNING",
+   "dependsOn": [
+    "h2-general-sym (for require-used)"
+   ],
+   "vars": 511181,
+   "clauses": 2177603,
+   "encoding": {
+    "hidden": 3,
+    "bias": "general",
+    "require_used": true,
+    "strong": true,
+    "enc": "binary",
+    "positions": 627
+   },
+   "solver": {
+    "name": "cadical",
+    "version": "CaDiCaL 3.1.0 (git e4d9bd93af444c6575a908a24da2c4130cb2a1c7)",
+    "flags": "-q --seed=0 --lrat=true --binary=false (per cube: F + cube units)"
+   },
+   "conquer": {
+    "leaves": 1026,
+    "decided": 482,
+    "unsat": 395,
+    "sat": 0,
+    "split": 87,
+    "open": 544,
+    "failed": 0,
+    "cubeSeconds": 1034914,
+    "proofBytesXz": 99045651740,
+    "etaHours": 33.0,
+    "updatedAt": "2026-11-23T22:31:08-0500"
+   },
+   "leafChecks": {
+    "lrat-check": "395 leaves VERIFIED during the run",
+    "cake_lpr": {
+     "rechecked": 392,
+     "rechecked_unsat": 392,
+     "failed": 0,
+     "proof_not_kept": 0,
+     "updatedAt": "2026-11-23T22:22:27-0500"
+    }
+   },
+   "coverTree": {
+    "cnf": "proof/cnf/h3p.cnf",
+    "cnfSha256": "6806f90c7fb49c3ed67cdc65e8cff3cb1ca6f18f88306d3643a5547aeb9e1d63",
+    "tritClausesPresent": true,
+    "trits": 54,
+    "checkedAt": "2026-11-23T22:22:27-0500",
+    "rootCubes": 243,
+    "rootTrits": 5,
+    "split": 87,
+    "partition": true,
+    "leaves": 939,
+    "leavesUnsatChecked": 395,
+    "leavesSat": 0,
+    "leavesOpen": 544,
+    "leavesOther": 0,
+    "coversSpace": true,
+    "allLeavesUnsat": false
+   },
+   "coverSat": "pending: cnfproof.py cover (F and not(every leaf) is UNSAT, LRAT) after the last leaf"
+  },
+  {
+   "claim": "Width 3, any integer biases, monolithic (cross-check, no proof)",
+   "name": "h3-general-mono",
+   "host": "build host",
+   "result": "RUNNING",
+   "status": {
+    "state": "running",
+    "name": "h3-mono",
+    "pid": 814462,
+    "started": "2026-11-22T16:53:24+0000",
+    "updatedAt": "2026-11-24T03:31:01+0000",
+    "wallHours": 34.63,
+    "timeout": 604800.0,
+    "running": [
+     {
+      "n": 0,
+      "solver": "kissat",
+      "seed": 0,
+      "proof": false,
+      "cnf": "h3p.cnf",
+      "extra": "",
+      "pid": 814495,
+      "hours": 34.63
+     },
+     {
+      "n": 1,
+      "solver": "kissat",
+      "seed": 1,
+      "proof": false,
+      "cnf": "h3p.cnf",
+      "extra": "--sat",
+      "pid": 814496,
+      "hours": 34.63
+     },
+     {
+      "n": 2,
+      "solver": "cadical",
+      "seed": 0,
+      "proof": false,
+      "cnf": "h3p.cnf",
+      "extra": "",
+      "pid": 814500,
+      "hours": 34.63
+     }
+    ],
+    "results": [],
+    "memFreeGB": 60.4
+   }
+  },
+  {
+   "claim": "Width 3, bounded biases (cross-check, no proof)",
+   "name": "h3-bounded",
+   "host": "build host",
+   "result": "RUNNING",
+   "status": {
+    "state": "running",
+    "name": "h3-small",
+    "pid": 886812,
+    "started": "2026-11-22T17:17:00+0000",
+    "updatedAt": "2026-11-24T03:31:07+0000",
+    "wallHours": 34.24,
+    "timeout": 604800.0,
+    "running": [
+     {
+      "n": 0,
+      "solver": "kissat",
+      "seed": 0,
+      "proof": false,
+      "cnf": "h3s.cnf",
+      "extra": "",
+      "pid": 886815,
+      "hours": 34.24
+     },
+     {
+      "n": 1,
+      "solver": "cadical",
+      "seed": 0,
+      "proof": false,
+      "cnf": "h3s.cnf",
+      "extra": "",
+      "pid": 886816,
+      "hours": 34.24
+     }
+    ],
+    "results": [],
+    "memFreeGB": 60.2
+   }
+  },
+  {
+   "claim": "No width-1 net never loses as X and as O (symmetry canonicalisation), for any integer hidden biases, real-valued output biases and any tie order",
+   "name": "h1-tie-sym-cadical",
+   "host": "build host",
+   "cnf": "tie/cnf/h1s-tie.cnf",
+   "cnfSha256": "db2b53d7bef18baeb5e89ee3236db0aa56bdc4915689fc6c11e0517d52b484a7",
+   "vars": 255864,
+   "clauses": 1169959,
+   "encoding": {
+    "hidden": 1,
+    "bias": "general",
+    "require_used": false,
+    "strong": true,
+    "enc": "binary",
+    "sides": "xo",
+    "sym": true,
+    "positions": 627,
+    "max_nonzero": null,
+    "tie_order": true,
+    "canon": "min"
+   },
+   "solver": {
+    "name": "cadical",
+    "version": "CaDiCaL 3.1.0 (git e4d9bd93af444c6575a908a24da2c4130cb2a1c7)",
+    "flags": "-q --seed=0 --lrat=true --binary=false",
+    "proofFormat": "LRAT (text)"
+   },
+   "solveSeconds": 380.3,
+   "proof": {
+    "path": "tie/proofs/h1s-tie.cadical0.lrat.xz",
+    "format": "LRAT (text), stored xz",
+    "bytes": 305336855,
+    "sha256": "5635eedd766414a091009deb147da67b7cc911d90a3bed4b68d20e966bfb2036",
+    "bytesXz": 47214252
+   },
+   "checks": [
+    {
+     "checker": "lrat-check",
+     "version": "lrat-check from drat-trim (git 2e3b2dc0ecf938addbd779d42877b6ed69d9a985)",
+     "result": "VERIFIED",
+     "seconds": 3.7
+    },
+    {
+     "checker": "cake_lpr",
+     "version": "cake_lpr (git 033aad53d1733bd4b8ca41cf6f1b5fb5d84f8de2; CakeML 665f9b2, HOL4 9783a49), ARMv8 build",
+     "result": "VERIFIED",
+     "seconds": 23.1
+    }
+   ],
+   "build": "cnfproof.py build --hidden 1 --bias general --tie-order",
+   "dependsOn": [],
+   "result": "UNSAT"
+  },
+  {
+   "claim": "No width-1 net never loses as X and as O without symmetry canonicalisation, for any integer hidden biases, real-valued output biases and any tie order",
+   "name": "h1-tie-raw-cadical",
+   "host": "build host",
+   "cnf": "tie/cnf/h1r-tie.cnf",
+   "cnfSha256": "bbdaf6ee4fb750fe0dd4a3ab58f91e3645388113b652f85cec2254192d4706aa",
+   "vars": 1803210,
+   "clauses": 8219018,
+   "encoding": {
+    "hidden": 1,
+    "bias": "general",
+    "require_used": false,
+    "strong": true,
+    "enc": "binary",
+    "sides": "xo",
+    "sym": false,
+    "positions": 4520,
+    "max_nonzero": null,
+    "tie_order": true,
+    "canon": "min"
+   },
+   "solver": {
+    "name": "cadical",
+    "version": "CaDiCaL 3.1.0 (git e4d9bd93af444c6575a908a24da2c4130cb2a1c7)",
+    "flags": "-q --seed=0 --lrat=true --binary=false",
+    "proofFormat": "LRAT (text)"
+   },
+   "solveSeconds": 1184.7,
+   "proof": {
+    "path": "tie/proofs/h1r-tie.cadical0.lrat.xz",
+    "format": "LRAT (text), stored xz",
+    "bytes": 693366962,
+    "sha256": "017de321bd4a09eabae51781dd08c7a7cdedfdc76a1ec4f5cfb82de8c43e13f2",
+    "bytesXz": 93699476
+   },
+   "checks": [
+    {
+     "checker": "lrat-check",
+     "version": "lrat-check from drat-trim (git 2e3b2dc0ecf938addbd779d42877b6ed69d9a985)",
+     "result": "VERIFIED",
+     "seconds": 8.5
+    },
+    {
+     "checker": "cake_lpr",
+     "version": "cake_lpr (git 033aad53d1733bd4b8ca41cf6f1b5fb5d84f8de2; CakeML 665f9b2, HOL4 9783a49), ARMv8 build",
+     "result": "VERIFIED",
+     "seconds": 29.5
+    }
+   ],
+   "build": "cnfproof.py build --hidden 1 --bias general --tie-order --no-sym",
+   "dependsOn": [],
+   "result": "UNSAT"
+  },
+  {
+   "claim": "No width-1 net never loses as X and as O when the canonical board is the largest of the 8 images instead of the smallest, for any integer biases (robustness of the canonical-form result)",
+   "name": "h1-max-sym-cadical",
+   "host": "build host",
+   "cnf": "tie/cnf/h1s-max.cnf",
+   "cnfSha256": "a622791f43742cd6c739e02ab813feb23c311aaf3ded7b4e0402bd477fd0dec6",
+   "vars": 209308,
+   "clauses": 922443,
+   "encoding": {
+    "hidden": 1,
+    "bias": "general",
+    "require_used": false,
+    "strong": true,
+    "enc": "binary",
+    "sides": "xo",
+    "sym": true,
+    "positions": 627,
+    "max_nonzero": null,
+    "tie_order": false,
+    "canon": "max"
+   },
+   "solver": {
+    "name": "cadical",
+    "version": "CaDiCaL 3.1.0 (git e4d9bd93af444c6575a908a24da2c4130cb2a1c7)",
+    "flags": "-q --seed=0 --lrat=true --binary=false",
+    "proofFormat": "LRAT (text)"
+   },
+   "solveSeconds": 69.0,
+   "proof": {
+    "path": "tie/proofs/h1s-max.cadical0.lrat.xz",
+    "format": "LRAT (text), stored xz",
+    "bytes": 84399113,
+    "sha256": "b4384fcb7ec7c0eb776b587fec08269f6a312b0e2cd1038f4b51e61109db8fed",
+    "bytesXz": 13342236
+   },
+   "checks": [
+    {
+     "checker": "lrat-check",
+     "version": "lrat-check from drat-trim (git 2e3b2dc0ecf938addbd779d42877b6ed69d9a985)",
+     "result": "VERIFIED",
+     "seconds": 1.6
+    },
+    {
+     "checker": "cake_lpr",
+     "version": "cake_lpr (git 033aad53d1733bd4b8ca41cf6f1b5fb5d84f8de2; CakeML 665f9b2, HOL4 9783a49), ARMv8 build",
+     "result": "VERIFIED",
+     "seconds": 2.6
+    }
+   ],
+   "build": "cnfproof.py build --hidden 1 --bias general --canon max",
+   "dependsOn": [],
+   "result": "UNSAT"
+  }
+ ]
+}

@@ -1,0 +1,22 @@
+{
+ "test": "tests/test_encoding_audit.py",
+ "ran": "2026-11-23T03:30Z, python-sat 'cadical195', nice 19, one core",
+ "result": "6 of 6 PASS",
+ "tests": {
+  "test_decode_sat_models": "PASS",
+  "test_move_semantics_sym": "PASS",
+  "test_move_semantics_no_symmetry": "PASS",
+  "test_verdict_random_nets_h2": "PASS",
+  "test_verdict_perturbed_nets_h4": "PASS",
+  "test_verdict_random_assignments_h4": "PASS"
+ },
+ "stats": {
+  "sat_models_decoded": 8,
+  "sat_models_from_search": 6,
+  "moves_sym": {"nets": 24, "hidden": 2, "positions_checked": 15048, "tied_positions": 7178, "mask_decides": 5323, "forced_checks": 2542},
+  "moves_raw": {"nets": 12, "hidden": 3, "positions_checked": 3600, "tied_positions": 895, "mask_decides": 1630, "forced_checks": 622},
+  "verdict_random_h2": 150,
+  "verdict_perturbed_h4": {"never_loses": 16, "loses": 180},
+  "verdict_assignments_h4": {"sat": 8, "unsat": 292, "invalid_trit": 115, "not_normal": 48, "loses": 129}
+ }
+}

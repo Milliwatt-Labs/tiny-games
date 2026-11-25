@@ -1,0 +1,3 @@
+# Training and the size sweep (train.py, sweep.py, report.py). CPU is enough.
+-r requirements.txt
+torch>=2.1

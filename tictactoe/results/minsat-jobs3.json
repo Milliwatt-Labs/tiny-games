@@ -1,0 +1,62 @@
+[
+{
+"name": "x-raw-H2-nz10-general-used",
+"args": [
+"--hidden",
+"2",
+"--sides",
+"x",
+"--max-nonzero",
+"10",
+"--bias",
+"general",
+"--require-used"
+],
+"timeout": 21600
+},
+{
+"name": "x-raw-H3-nz10-general-used",
+"args": [
+"--hidden",
+"3",
+"--sides",
+"x",
+"--max-nonzero",
+"10",
+"--bias",
+"general",
+"--require-used"
+],
+"timeout": 21600
+},
+{
+"name": "x-raw-H4-nz10-general-used",
+"args": [
+"--hidden",
+"4",
+"--sides",
+"x",
+"--max-nonzero",
+"10",
+"--bias",
+"general",
+"--require-used"
+],
+"timeout": 21600
+},
+{
+"name": "x-raw-H5-nz10-general-used",
+"args": [
+"--hidden",
+"5",
+"--sides",
+"x",
+"--max-nonzero",
+"10",
+"--bias",
+"general",
+"--require-used"
+],
+"timeout": 21600
+}
+]
